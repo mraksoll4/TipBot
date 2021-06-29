@@ -5,7 +5,7 @@
       "prefix": "!",
       "debug": true
   },
-  "bte": {
+  "wcn": {
     "paytxfee": .01,
     "config": {
       "port": 1605,

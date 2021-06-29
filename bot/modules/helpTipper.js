@@ -1,6 +1,6 @@
 'use strict';
 let config = require('config');
-let bteFee = config.get('bte').paytxfee;
+let wcnFee = config.get('wcn').paytxfee;
 let prefix = config.get('bot').prefix;
 exports.commands = ['tiphelp'];
 exports.tiphelp = {
@@ -9,14 +9,14 @@ exports.tiphelp = {
   process: function(bot, message) {
     message.author.send(
       '__**:bank: Coins :bank:**__\n' +
-      '  **Bitweb (BTE) Tipper**\n    Transaction Fees: **' + bteFee + '**\n' +        
+      '  **Widecoin (WCN) Tipper**\n    Transaction Fees: **' + wcnFee + '**\n' +        
       '__**Commands**__\n' +
-      '  **' + prefix + 'tipbte** : Displays This Message\n' +
-      '  **' + prefix + 'tipbte balance** : get your balance\n' +
-      '  **' + prefix + 'tipbte deposit** : get address for your deposits\n' +
-      '  **' + prefix + 'tipbte withdraw <ADDRESS> <AMOUNT>** : withdraw coins to specified address\n' +
-      '  **' + prefix + 'tipbte <@user> <amount>** :mention a user with @ and then the amount to tip them\n' +
-      '  **' + prefix + 'tipbte private <@user> <amount>** : put private before Mentioning a user to tip them privately\n'
+      '  **' + prefix + 'tipwcn** : Displays This Message\n' +
+      '  **' + prefix + 'tipwcn balance** : get your balance\n' +
+      '  **' + prefix + 'tipwcn deposit** : get address for your deposits\n' +
+      '  **' + prefix + 'tipwcn withdraw <ADDRESS> <AMOUNT>** : withdraw coins to specified address\n' +
+      '  **' + prefix + 'tipwcn <@user> <amount>** :mention a user with @ and then the amount to tip them\n' +
+      '  **' + prefix + 'tipwcn private <@user> <amount>** : put private before Mentioning a user to tip them privately\n'
     );
   }
 };
